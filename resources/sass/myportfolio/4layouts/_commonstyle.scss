@@ -1,0 +1,54 @@
+a{
+    text-decoration: none !important;
+}
+
+.skill-primary{
+    background-color: var(--primarySkill) !important;
+
+}
+.skill-warn{
+    background-color: var(--warnSkill) !important;
+
+}
+.skill-secondary{
+    background-color: var(--secondarySkill) !important;
+}
+.skill-grow{
+    background-color: var(--growSkill) !important;
+}
+.skill-growing{
+    background-color: var(--growingSkill) !important;
+}
+
+.leftRadius_none{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+.rightRadius_none{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.mt-30px{
+    margin-top: 30px !important;
+}
+
+.text-primaryi{
+    color: var(--c-primaryColor) !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn{
+    &.btn-primary{
+        background-color: var(--c-whiteColor) !important;
+        color: var(--c-primaryColor) !important;
+        font-weight: 500;
+        border:1px solid var(--c-primaryColor) !important;
+
+        &:hover{
+            background-color: var(--c-primaryColor) !important;
+        color: var(--c-whiteColor) !important;
+
+        }
+    }
+}

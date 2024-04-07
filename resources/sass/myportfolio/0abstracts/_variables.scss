@@ -1,0 +1,38 @@
+
+$colors: (
+    "navy": navy,
+    "blue": blue,
+    "aqua": aqua,
+    "teal": teal,
+    "purple": purple,
+    "hotpink": hotpink,
+    "fuchsia": fuchsia,
+    "maroon": maroon,
+    "olive": olive,
+    "green": green,
+    "yellowgreen": yellowgreen,
+    "lime": lime,
+    "yellow": yellow,
+    "orange": orange,
+    "orangered": orangered,
+    "red": red,
+    "black": black,
+    "silver": silver,
+    "gray": gray,
+    "white":white,
+);
+
+.portFolio{
+    --c-primaryColor:#6244C5;
+    --c-secondaryColor:#12141D;
+    --c-whiteColor:#fff;
+    --font-primary:"Amatic SC", sans-serif;
+    --font-secondary:"Inter", sans-serif;
+    --primarySkill:#6244C5;
+    --secondarySkill:#ffc448;
+    --warnSkill:#d9e31abf;
+    --growSkill:#fd200dfa;
+    --growingSkill:#3ed705;
+}
+
+

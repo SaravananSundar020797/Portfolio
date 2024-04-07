@@ -1,0 +1,76 @@
+.navbarBlock{
+    background-color: var(--c-whiteColor);
+    height:90px;
+    .container{
+        background-color: var(--c-whiteColor);
+    }
+    .navbar-brand{
+        h1{
+            font-size: 28px;
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+            font-family: var(--font-secondary);
+            span {
+                color: var(--c-primaryColor);
+            }
+        }
+    }
+    .navbar-collapse{
+        flex-grow: unset;
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            li {
+                white-space: nowrap;
+                padding: 10px 0 10px 28px;
+            }
+        }
+        &.collapseMain{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 3px;
+                font-family: var(--font-secondary);
+                font-size: 16px;
+                font-weight: 600;
+                color: #7f7f90;
+                white-space: nowrap;
+                transition: 0.3s;
+                position: relative;
+                &:hover,&.active{
+                    color: #000;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -6px;
+                    left: 0;
+                    background-color: var(--c-primaryColor);
+                    visibility: hidden;
+                    width: 0px;
+                    transition: all 0.3s ease-in-out 0s;
+                }
+                &:hover{
+                    &::before {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                }
+            }
+            .active{
+                &::before {
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
